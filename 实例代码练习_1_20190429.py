@@ -1,5 +1,5 @@
 # 2019工资计算，三险一金缴费比例有差异，个税未计入专项抵扣附加
-# 获取工资
+# 获取税前收入
 salary = int(float(input('请输入你的税前收入：\n> ')))
 print(f"你的税前收入为：\n\t{salary}。")
 
@@ -52,5 +52,6 @@ def suodeshui(suodee):
 sds = suodeshui(suodee)
 print(f"你的个人所得税为：\n\t{sds}")
 
+# 计算实际所得工资
 paid = salary - sxyj - sds
 print(f"你的实发工资为：\n\t{paid}。")
